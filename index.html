@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fce by guillermo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Fce</h1>
+        <p>Form Content Editable - Use divs as contentEditable input fields.</p>
+
+        <p class="view"><a href="https://github.com/guillermo/fce">View the Project on GitHub <small>guillermo/fce</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/guillermo/fce/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/guillermo/fce/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/guillermo/fce">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="form-content-editable---fce" class="anchor" href="#form-content-editable---fce"><span class="octicon octicon-link"></span></a>Form Content Editable - FCE</h1>
+
+<p>Form Content Editable is a Javascript plugin with 0 dependencies, that makes a div with html behaves like a normal textarea.</p>
+
+<h2>
+<a name="behaviour" class="anchor" href="#behaviour"><span class="octicon octicon-link"></span></a>Behaviour</h2>
+
+<p>It attaches to any html element with <em>data-name</em> and will <strong>add</strong> (it is not necesary to be added) a hidden field just after the opening of the parent form. It will trigger the normal events:</p>
+
+<ul>
+<li>focus</li>
+<li>blur</li>
+<li>change</li>
+</ul><p>With this events you can decide what to do. For example:</p>
+
+<ul>
+<li>OnFocus: Show toolbar (Bold, Italic, headings)</li>
+<li>OnBlur: Hide toolbar</li>
+<li>OnChange: Validate, remote save.</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">/page/3</span> <span class="na">method=</span><span class="s">post</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">data-name=</span><span class="s">title</span><span class="nt">&gt;</span>This Is the title of the page 3<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">page-body</span> <span class="na">data-name=</span><span class="s">body</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+ <span class="nx">FCE</span><span class="p">.</span><span class="nx">attach</span><span class="p">()</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>Api</h2>
+
+<ul>
+<li>FCE.<strong>attach()</strong> - Will attach to any <strong>form *[data-name]</strong>
+</li>
+<li>FCE.<strong>autoload()</strong> - Will listen for the events: <strong>load</strong> and <strong>page:load</strong>, and call FCE.<strong>attach()</strong>.</li>
+</ul><h2>
+<a name="milestones" class="anchor" href="#milestones"><span class="octicon octicon-link"></span></a>Milestones</h2>
+
+<ul>
+<li>
+<em>1.0</em> - Make it work with the default behaviour.</li>
+<li>
+<em>1.1</em> - Add support for a toolbar.</li>
+<li>
+<em>1.2</em> - Support dragAndDropEvents of external images.</li>
+</ul><h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<ul>
+<li>See commiters.</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Any BSD license.</p>
+
+<h2>
+<a name="collaboration" class="anchor" href="#collaboration"><span class="octicon octicon-link"></span></a>Collaboration</h2>
+
+<ul>
+<li>Standard github collaboration process.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/guillermo">guillermo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-45801359-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
