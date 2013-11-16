@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>FCE - Demo</title>
+<link href=style.css rel=stylesheet>
+<link href=prism.css rel=stylesheet>
+</head>
+<body>
+
+<div class=container>
+  <header id=intro>
+    <h1>FCE <em>Form Content Editable</em></h1>
+    <p>Form Content Editable is a Javascript plugin with 0 dependencies, that
+    makes a div with html behaves like a normal textarea.</p>
+  </header>
+
+  <pre><html>asdf</pre>
+
+  <pre><code class="language-html">
+<form>
+<div> hello world </div>
+</form>
+</code>
+  </pre>
+
+  <section id=demo>
+    <p>You can see the differents events that happend while you interact with the webpage</p>
+    <form action="#" method=get>
+      <h1 data-name=title>This Is the title of the page 3</h1>
+      <div id=page-body data-name=body>
+        <p>This is the body that will be content editable once you do click here</p>
+      </div>
+      <label>Describe your changes
+        <input type=text placeholder="describe your changes" name="changes">
+      </label>
+    </form>
+    </section>
+
+    <footer id=console>
+
+    </footer>
+  </div>
+
+
+  <script src=fce.js></script> <!-- fce.js the only thing you should copy -->
+  <script src=prism.js></script> <!-- fce.js the only thing you should copy -->
+  <script>
+    FCE.autoload();
+  </script>
+  <script src=demo.js></script><!-- js for this demo, like the console -->
+  </body>
+  </html>
+
